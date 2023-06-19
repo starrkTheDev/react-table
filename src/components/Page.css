@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    text-align: left;
+    width: 100vw;
+}
+
+body {
+    background: linear-gradient(45deg, #1D2671, #C33764);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+thead th {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+tbody tr.highlight {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumb {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: white;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+}
+
+.breadcrumb-separator {
+    margin: 0 5px;
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+    html {
+        width: 155vw;
+        height: 160vh;
+    }
+
+    body {
+        width: 155vw;
+        height: 80vh;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+    html {
+        height: 115vh;
+    }
+
+    body {
+        height: 115vh;
+    }
+
+    th,
+    td {
+        padding: 5px 10px;
+    }
+}
